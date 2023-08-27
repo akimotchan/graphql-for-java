@@ -1,5 +1,7 @@
 type Query {
     bookById(id: ID): Book
+    taskById(id: ID): Task
+    taskList(id: ID): [Task]
 }
 
 type Book {
@@ -10,6 +12,19 @@ type Book {
 }
 
 type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}
+
+type Task {
+    id: ID
+    name: String
+    description: String
+    user: User
+}
+
+type User {
     id: ID
     firstName: String
     lastName: String

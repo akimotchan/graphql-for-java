@@ -1,4 +1,4 @@
-query taskDetails($id: ID) {
+query taskList($id: ID) {
     taskList(id: $id) {
         id
         name

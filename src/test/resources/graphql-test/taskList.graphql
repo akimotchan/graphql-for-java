@@ -1,0 +1,12 @@
+query taskList($id: ID) {
+    taskList(id: $id) {
+        id
+        name
+        description
+        user {
+            id
+            firstName
+            lastName
+        }
+    }
+}
